@@ -1,0 +1,191 @@
+@font-face {
+  font-family: Norse-bold;
+  src: url('Norse-Bold.otf');
+}
+
+:root.light {
+  --base-bg: rgb(245, 245, 245);
+  --base-text-color: hsl(0, 0%, 11%);
+
+  --button-bg: rgb(0, 136, 255);
+  --button-color: rgb(246, 246, 246);
+  --button-border: 1px solid rgb(181, 221, 254);
+  --button-box-shadow: inset 1px 1px 4px rgba(255, 255, 255, 0.318);
+  --button-box-shodow-active: inset 1px 1px 2px black;
+  --button-text-shadow: 0px 0px 4px rgb(0, 10, 19);
+  --button-text-shadow-active: 0px 0px 4px rgb(255, 255, 255);
+
+  --card-bg: rgb(255, 255, 255);
+  --form-text-color: rgb(110, 110, 110);
+  --input-box-shadow: 1px 1px 4px rgba(124, 124, 124, 0.329);
+  --input-box-shadow-focus: 1px 1px 4px rgb(66, 66, 66);
+}
+
+:root.dark {
+  --base-bg: rgb(9, 16, 21);
+  --base-text-color: rgb(246, 246, 246);
+
+  --button-bg: rgb(9, 16, 21);
+  --button-color: rgb(246, 246, 246);
+  --button-border: 1px solid rgb(173, 215, 252);
+  --button-box-shadow: inset 1px 1px 4px rgb(0, 136, 255);
+  --button-box-shodow-active: inset 1px 1px 2px black;
+  --button-text-shadow: 0px 0px 4px rgb(0, 136, 255);
+  --button-text-shadow-active: 0px 0px 4px rgb(0, 0, 0);
+
+  --card-bg: rgb(22, 28, 32);
+  --form-text-color: rgb(218, 243, 255);
+  --input-box-shadow: 1px 1px 4px rgb(65, 65, 65);
+  --input-box-shadow-focus: 1px 1px 4px rgb(167, 167, 167);
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--button-color);
+  text-shadow: var(--button-text-shadow);
+  border: var(--button-border);
+  border-radius: 5px;
+  padding: 5px 10px;
+  box-shadow: var(--button-box-shadow);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: var(--button-box-shodow-active);
+  text-shadow: var(--button-text-shadow-active);
+  background-color: rgb(0, 136, 255);
+}
+
+body {
+  background-color: var(--base-bg);
+  color: var(--base-text-color);
+  margin: 0px;
+}
+
+.overall-container {
+  display: flex;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  background-image: url(Cyberpunk\ bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: max(40vw, 800px);
+  height: 100vh;
+}
+
+.logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20vh;
+  left: 0;
+  width: calc(100% - 20px);
+  color: white;
+  font-family: Norse-bold;
+  font-size: max(40px, 50px);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.586);
+  text-wrap: nowrap;
+}
+
+.logo-container p{
+  padding: 10px;
+  margin: 0px;
+}
+
+.logo-container img{
+  height: max(50px, 70px);
+}
+
+.form-container {
+  background-color: var(--base-bg);
+  color: var(--base-text-color);
+  width: 60vw;
+  width: 100%;
+}
+
+.header {
+  background-color: inherit;
+  margin-top: 30px;
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.change-theme {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.card {
+  background-color: var(--card-bg);
+  color: inherit;
+  font-family: sans-serif;
+  padding: 10px 20px;
+  box-shadow: 3px 3px 4px rgba(116, 116, 116, 0.39);
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  gap: max(20px, 8vw);
+  font-size: min(0.7rem, 20px);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--form-text-color);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card input {
+  border: none;
+  width: max(150px, 15vw);
+  box-shadow: var(--input-box-shadow);
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: inherit;
+  color: inherit;
+}
+
+.error-message {
+  color: red;
+  transform: translateY(-18px);
+}
+
+.card input:invalid {
+  border: 1px solid red;
+}
+
+.card input.isInValid{
+  border: 1px solid red;
+}
+
+.card input:focus {
+  box-shadow:var(--input-box-shadow-focus);
+  outline: none;
+}
+
+.footer {
+  padding: 20px;
+  background-color: inherit;
+}
+
+.footer button {
+  padding: 10px 30px;
+}
+
+.linkCont {
+  display: flex;
+  gap: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
