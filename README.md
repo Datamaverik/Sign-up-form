@@ -1,0 +1,2 @@
+I made this simple project to practice and gain confidence in using various CSS functionality and making this sign-up form mobile responsive while also adding dark and light theme changing option.
+I also learned how to use HTML 5 form validation and how to combine them with custom form validation using Javascript to show error to the user and guide him to enter the details asked in correct fromat.
