@@ -1,6 +1,6 @@
 @font-face {
   font-family: Norse-bold;
-  src: url('Norse-Bold.otf');
+  src: url("/assets/Norse-Bold.otf");
 }
 
 :root.light {
@@ -72,14 +72,14 @@ body {
 .image-container {
   position: relative;
   display: flex;
-  background-image: url(Cyberpunk\ bg.jpg);
+  background-image: url(/assets/Cyberpunk-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: max(40vw, 800px);
   height: 100vh;
 }
 
-.logo-container{
+.logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,12 +96,12 @@ body {
   text-wrap: nowrap;
 }
 
-.logo-container p{
+.logo-container p {
   padding: 10px;
   margin: 0px;
 }
 
-.logo-container img{
+.logo-container img {
   height: max(50px, 70px);
 }
 
@@ -164,12 +164,12 @@ form {
   border: 1px solid red;
 }
 
-.card input.isInValid{
+.card input.isInValid {
   border: 1px solid red;
 }
 
 .card input:focus {
-  box-shadow:var(--input-box-shadow-focus);
+  box-shadow: var(--input-box-shadow-focus);
   outline: none;
 }
 

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="overall-container">
+      <div class="image-container">
+        <div class="logo-container">
+          <p>Odin</p>
+          <img src="/assets/odin-lined.png" alt="odin" />
+        </div>
+      </div>
+      <div class="form-container">
+        <div class="header">
+          <button class="change-theme">Dark</button>
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            now to get started.
+          </p>
+          <p>You know you want to.</p>
+        </div>
+        <div class="card">
+          <h2>Let's do this!</h2>
+          <form
+            action="https://httpbin.org/post"
+            id="formElement"
+            method="post"
+          >
+            <div class="input-column1">
+              <legend>FIRST NAME</legend>
+              <input
+                name="first-name"
+                class="fields fName"
+                type="text"
+                required
+              />
+              <p class="error-message" id="firstName"></p>
+              <legend>EMAIL</legend>
+              <input name="email" class="fields emailInput" type="email" />
+              <p class="error-message" id="email"></p>
+              <legend>PASSWORD</legend>
+              <input
+                name="password"
+                class="fields pass"
+                type="password"
+                minlength="4"
+              />
+              <p class="error-message" id="password"></p>
+            </div>
+            <div class="input-column2">
+              <legend>LAST NAME</legend>
+              <input
+                name="last-name"
+                class="fields lName"
+                type="text"
+                required
+              />
+              <p class="error-message" id="lastName"></p>
+              <legend>PHONE NUMBER</legend>
+              <input name="phone-number" class="fields num" type="number" />
+              <p class="error-message" id="phoneNumber"></p>
+              <legend>CONFIRM PASSWORD</legend>
+              <input
+                name="confirmed-password"
+                class="fields rePass"
+                type="password"
+                minlength="4"
+              />
+              <p class="error-message" id="confirmPassword"></p>
+            </div>
+          </form>
+        </div>
+        <div class="footer">
+          <button class="submitBtn" type="submit">Create Account</button>
+          <div class="linkCont">
+            <p>Already have an account?</p>
+            <a href="./src/logIn.html" target="_blank">
+              <p>login</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
